@@ -71,13 +71,13 @@ function randomcolour(){
 function draw() {
   background(200);
   fill(255);
-  rect(-windowWidth/2,-windowHeight/2,375,812);
+  rect(-windowWidth/2,-windowHeight/2,windowWidth,windowHeight);
   
   let colourR = sliderR.value();
   let colourG = sliderG.value();
   let colourB = sliderB.value();
 
-  translate(-windowWidth/4,-windowHeight/4,100);
+  translate(0,0,300);
   fill(colourR, colourG, colourB);
   noStroke();
   rotateX(frameCount * 0.1);
