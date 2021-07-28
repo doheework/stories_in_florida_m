@@ -49,12 +49,12 @@ function setup() {
   sliderB.hide();
 
   button = createImg('pngegg.png');
-  button.position(435, 390);
-  button.size(70,70);
+  button.position(windowWidth/2, windowHeight/4*3);
+  button.size(100,100);
   button.mousePressed(randomcolour);
 
-  x = -1050;
-  y = -500;
+  x = -windowWidth;
+  y = -windowHeight/2;
 
 }
 
@@ -69,15 +69,20 @@ function randomcolour(){
 }
 
 function draw() {
-  background(200);
+  background(250);
   fill(255);
-  rect(-windowWidth/2,-windowHeight/2,windowWidth,windowHeight);
   
   let colourR = sliderR.value();
   let colourG = sliderG.value();
   let colourB = sliderB.value();
 
-  translate(0,0,400);
+  translate(0,0,-180);
+  image(light, -windowWidth*0.7,-windowHeight/1.2,1576,1027);
+  image(wave, x, y,2184,1158.339);
+  image(island,-windowWidth*2.5,-windowHeight/3.2,2112,1187);
+  image(panther,-windowWidth*0.8, windowHeight/3, 397, 265);
+
+  translate(0,0,600);
   fill(colourR, colourG, colourB);
   noStroke();
   rotateX(frameCount * 0.1);
