@@ -39,7 +39,7 @@ function preload(){
 
 function setup() {
 
-  createCanvas(windowWidth, windowHeight, WEBGL);
+  createCanvas(375, 812, WEBGL);
 
   sliderR = createSlider(0, 255, 159);
   sliderG = createSlider(0, 255, 55);
