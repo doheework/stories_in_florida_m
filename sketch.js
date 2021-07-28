@@ -77,7 +77,7 @@ function draw() {
   let colourB = sliderB.value();
 
   translate(0,0,-180);
-  image(light, -windowWidth*0.7,-windowHeight/1.2,1576,1027);
+  image(light, 0,-windowHeight/1.2,1576,1027);
   image(wave, x, y,2184,1158.339);
   image(island,-windowWidth*2.5,-windowHeight/3.2,2112,1187);
   image(panther,-windowWidth*0.8, windowHeight/3, 397, 265);
