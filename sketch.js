@@ -49,7 +49,7 @@ function setup() {
   sliderB.hide();
 
   button = createImg('pngegg.png');
-  button.position(windowWidth/2, windowHeight/4*3);
+  button.position(180, 100);
   button.size(100,100);
   button.mousePressed(randomcolour);
 
