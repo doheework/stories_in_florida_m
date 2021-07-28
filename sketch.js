@@ -77,7 +77,7 @@ function draw() {
   let colourG = sliderG.value();
   let colourB = sliderB.value();
 
-  translate(0,0,300);
+  translate(0,0,400);
   fill(colourR, colourG, colourB);
   noStroke();
   rotateX(frameCount * 0.1);
